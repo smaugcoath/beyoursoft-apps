@@ -4,14 +4,15 @@ import { ApiService } from './services/api/api.service';
 import { IProject } from './models/project.interface';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'ba-root',
+  templateUrl: './ba.component.html',
+  styleUrls: ['./ba.component.scss'],
 })
 export class AppComponent implements OnDestroy {
   private readonly _apiService: ApiService;
   projects: Array<IProject>;
 
+  title = 'BeYourSoft Apps';
   mobileQuery: MediaQueryList;
 
   fillerNav = Array.from({ length: 50 }, (_, i) => `Nav Item ${i + 1}`);

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACN,OAAO,EAAC,IAAI;CACb",
+    "sources": [
+        "ba-project-list.component.scss"
+    ],
+    "names": [],
+    "file": "ba-project-list.component.css"
+}

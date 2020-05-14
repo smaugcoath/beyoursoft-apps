@@ -1,0 +1,14 @@
+<div fxLayout="row wrap">
+  <div
+    *ngFor="let project of projects"
+    fxflex="100"
+    fxFlex.xs="100"
+    fxFlex.sm="50"
+    fxFlex.md="33"
+    fxFlex.lg="25"
+    fxFlex.xl="20"
+    class="project"
+  >
+    <ba-project-item [project]="project"></ba-project-item>
+  </div>
+</div>

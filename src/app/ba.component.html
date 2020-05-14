@@ -1,10 +1,10 @@
-<div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
-  <mat-toolbar color="primary" class="app-toolbar">
+<div class="ba-container" [class.ba-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="ba-toolbar">
     <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-    <h1 class="app-name">Responsive App</h1>
+    <h1 class="ba-name">Responsive App</h1>
   </mat-toolbar>
 
-  <mat-sidenav-container class="app-sidenav-container"
+  <mat-sidenav-container class="ba-sidenav-container"
                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
@@ -14,7 +14,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <app-project-list></app-project-list>
+      <ba-project-list></ba-project-list>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

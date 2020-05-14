@@ -1,0 +1,48 @@
+<mat-card class="project" [class]="{ disabled: isDisabled() }" margin>
+  <div name="overlay" [class]="{ disabled: isDisabled() }"></div>
+  <mat-card-header>
+    <img mat-card-avatar src="{{ project.logoUrl }}" />
+    <mat-card-title>{{ project.title }}</mat-card-title>
+    <mat-card-subtitle
+      ><i>By: {{ project.author }}</i></mat-card-subtitle
+    >
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="{{ project.imageUrl }}"
+    alt="{{ project.title }}"
+    class="main-image"
+  />
+  <mat-card-content style="min-height: 100px; height: 100%;">
+    <p>
+      {{ project.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <a
+      [disabled]="isDisabled()"
+      href="{{ project.appCodeUrl }}"
+      mat-mini-fab
+      target="_blank"
+      class="card-button"
+      title="Opens code example."
+      aria-label="Opens code example."
+      alt="Opens code example."
+    >
+      <mat-icon>code</mat-icon>
+    </a>
+    <a
+      [disabled]="isDisabled()"
+      href="{{ project.appExampleUrl }}"
+      mat-mini-fab
+      color="primary"
+      target="_blank"
+      class="card-button"
+      title="Opens live example."
+      aria-label="Opens live example."
+      alt="Opens live example."
+    >
+      <mat-icon>play_arrow</mat-icon>
+    </a>
+  </mat-card-actions>
+</mat-card>

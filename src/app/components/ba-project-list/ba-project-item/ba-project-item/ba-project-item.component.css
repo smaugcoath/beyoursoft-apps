@@ -1,0 +1,12 @@
+.main-image {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 500px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  /* this centers and crops the image so that it doesn't break the aspect ratio */
+}
+/*# sourceMappingURL=ba-project-item.component.css.map */

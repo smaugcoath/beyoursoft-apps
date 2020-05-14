@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,WAAW;EACnB,UAAU,EAAE,gBAAgB;EAC5B,UAAU,EAAE,KAAK;EACjB,eAAe,EAAE,MAAM;EAAE,gFAAgF;CAC1G",
+    "sources": [
+        "ba-project-item.component.scss"
+    ],
+    "names": [],
+    "file": "ba-project-item.component.css"
+}

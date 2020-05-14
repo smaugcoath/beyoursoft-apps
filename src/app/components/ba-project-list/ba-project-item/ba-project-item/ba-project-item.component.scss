@@ -1,0 +1,41 @@
+@import "~@angular/material/theming";
+
+.project {
+  @include mat-elevation(2);
+}
+.project:hover:not(.disabled) {
+  @include mat-elevation(8);
+}
+
+[name="overlay"] {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 80%
+  );
+  z-index: 2;
+  cursor: not-allowed;
+}
+[name="overlay"].disabled {
+  display: block;
+}
+
+.main-image {
+  height: fit-content; //so that it takes up full space
+  max-height: 500px; // this prevents the image from being extremely big
+  object-fit: cover;
+  object-position: center; /* this centers and crops the image so that it doesn't break the aspect ratio */
+}
+
+.card-button {
+  margin: 5px;
+}
