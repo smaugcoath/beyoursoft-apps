@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "json-server --watch ./server/database.json",
-    "deploy": "ng build --prod --base-href=/angular-ci-cd/"
+    "deploy": "ng build --prod --base-href=/beyoursoft-apps/"
   },
   "private": true,
   "dependencies": {
