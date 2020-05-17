@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "json-server --watch ./server/database.json"
+    "server": "json-server --watch ./server/database.json",
+    "deploy": "ng build --prod --base-href=/angular-ci-cd/"
   },
   "private": true,
   "dependencies": {
