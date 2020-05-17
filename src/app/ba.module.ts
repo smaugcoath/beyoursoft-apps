@@ -14,6 +14,7 @@ import { BaProjectListComponent } from './components/ba-project-list/ba-project-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MockApiService } from './services/api/mock-api.service';
 
 @NgModule({
   declarations: [BaComponent, BaProjectListComponent, BaProjectItemComponent],
@@ -32,7 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       enabled: environment.production,
     }),
   ],
-  providers: [{ provide: ApiService, useClass: ApiService }],
+  providers: [{ provide: ApiService, useClass: MockApiService }],
   bootstrap: [BaComponent],
 })
 export class BaModule {}
