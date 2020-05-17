@@ -1,0 +1,108 @@
+{
+  "configVersion": 1,
+  "timestamp": 1589727573123,
+  "index": "/beyoursoft-apps/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/beyoursoft-apps/favicon.ico",
+        "/beyoursoft-apps/index.html",
+        "/beyoursoft-apps/main-es2015.c509a0ab848d4af8d9b5.js",
+        "/beyoursoft-apps/main-es5.c509a0ab848d4af8d9b5.js",
+        "/beyoursoft-apps/manifest.webmanifest",
+        "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js",
+        "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js",
+        "/beyoursoft-apps/runtime-es2015.1eba213af0b233498d9d.js",
+        "/beyoursoft-apps/runtime-es5.1eba213af0b233498d9d.js",
+        "/beyoursoft-apps/styles.8a4575703f2ff4d0cbea.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/beyoursoft-apps/assets/icons/icon-128x128.png",
+        "/beyoursoft-apps/assets/icons/icon-144x144.png",
+        "/beyoursoft-apps/assets/icons/icon-152x152.png",
+        "/beyoursoft-apps/assets/icons/icon-192x192.png",
+        "/beyoursoft-apps/assets/icons/icon-384x384.png",
+        "/beyoursoft-apps/assets/icons/icon-512x512.png",
+        "/beyoursoft-apps/assets/icons/icon-72x72.png",
+        "/beyoursoft-apps/assets/icons/icon-96x96.png",
+        "/beyoursoft-apps/assets/images/angular-and-asp-net-core.png",
+        "/beyoursoft-apps/assets/images/angular.svg",
+        "/beyoursoft-apps/assets/images/big-beyoursoft.png",
+        "/beyoursoft-apps/assets/images/logo-beyoursoft.png",
+        "/beyoursoft-apps/assets/images/logo-coupler.png",
+        "/beyoursoft-apps/assets/images/logo-coupler2.png",
+        "/beyoursoft-apps/assets/images/logo-coupler3.png",
+        "/beyoursoft-apps/assets/images/logo-coupler4.png",
+        "/beyoursoft-apps/assets/images/logo-coupler5.png",
+        "/beyoursoft-apps/assets/images/logo-coupler6.png",
+        "/beyoursoft-apps/assets/images/logo-coupler7.png",
+        "/beyoursoft-apps/assets/images/logo-lucky-dicer.png",
+        "/beyoursoft-apps/assets/images/logo-ship-hunter.png",
+        "/beyoursoft-apps/assets/images/logo-todo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/beyoursoft-apps/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/beyoursoft-apps/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/beyoursoft-apps/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/beyoursoft-apps/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/beyoursoft-apps/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/beyoursoft-apps/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/beyoursoft-apps/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/beyoursoft-apps/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/beyoursoft-apps/assets/images/angular-and-asp-net-core.png": "ae5605858fee66adeb4bb4607a45c1a29770d6dd",
+    "/beyoursoft-apps/assets/images/angular.svg": "816b9feb802a7dd4b1b86e1907ad78ae0903f660",
+    "/beyoursoft-apps/assets/images/big-beyoursoft.png": "82ae24cda0e6bbc7a1defb8530f861b5b11b2578",
+    "/beyoursoft-apps/assets/images/logo-beyoursoft.png": "e125df592fb45a2951537310671aae156c2012d0",
+    "/beyoursoft-apps/assets/images/logo-coupler.png": "34c47de1cc73567c77854ce337b064431298c3a5",
+    "/beyoursoft-apps/assets/images/logo-coupler2.png": "7bca152e451a7eb70679fff6ce133e06a9e8ad40",
+    "/beyoursoft-apps/assets/images/logo-coupler3.png": "eff0ae6d0b2258194fa644f25675a830fa4adc2a",
+    "/beyoursoft-apps/assets/images/logo-coupler4.png": "4cfbf959922fc3feadc9f1e2788a8a5c3f3b4c62",
+    "/beyoursoft-apps/assets/images/logo-coupler5.png": "3b16a1ce464d898f2663ec120618b82fc1375f02",
+    "/beyoursoft-apps/assets/images/logo-coupler6.png": "059776e48c1e89ed87229340b451faedb44915fc",
+    "/beyoursoft-apps/assets/images/logo-coupler7.png": "39a5b5ac6e03770ee4d3e23b5fccd683bfce6017",
+    "/beyoursoft-apps/assets/images/logo-lucky-dicer.png": "5a10aff37d5dcbd8d4086aedff63f338a159a8d0",
+    "/beyoursoft-apps/assets/images/logo-ship-hunter.png": "7620cd0e7bd43e1838bc70de2c02444fd2f17463",
+    "/beyoursoft-apps/assets/images/logo-todo.png": "81304836001ddd4ecb7173d256540f5c6b10904f",
+    "/beyoursoft-apps/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/beyoursoft-apps/index.html": "610bc27f8d2e09affc5b8ae59f32b0164ef31f69",
+    "/beyoursoft-apps/main-es2015.c509a0ab848d4af8d9b5.js": "54f2573ca7a3215c958ee6650e9ef9190b1afcd6",
+    "/beyoursoft-apps/main-es5.c509a0ab848d4af8d9b5.js": "d45cf8a2ab8d732c31f49aa0db3b8113ff474a3b",
+    "/beyoursoft-apps/manifest.webmanifest": "81b336d28386b5966bfe3243c9fd8408e91c1c9a",
+    "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
+    "/beyoursoft-apps/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/beyoursoft-apps/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/beyoursoft-apps/styles.8a4575703f2ff4d0cbea.css": "7f3fff48e978a98ca389a99de00e2f60d762faf1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
