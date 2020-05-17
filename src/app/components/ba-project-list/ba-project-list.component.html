@@ -1,13 +1,31 @@
-<div fxLayout="row wrap">
+<mat-toolbar>
+  <h1>Projects</h1>
+  <span fxFlex></span>
+  <mat-form-field class="filter">
+    <mat-label>Filter</mat-label>
+    <input [(ngModel)]="filter" name="filter" matInput type="text" />
+    <button
+      mat-button
+      *ngIf="filter"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="filter = ''"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+</mat-toolbar>
+
+<div name="list" fxLayout="row wrap">
   <div
-    *ngFor="let project of projects"
+    *ngFor="let project of filteredProjects"
     fxflex="100"
     fxFlex.xs="100"
     fxFlex.sm="50"
     fxFlex.md="33"
     fxFlex.lg="25"
     fxFlex.xl="20"
-    class="project"
   >
     <ba-project-item [project]="project"></ba-project-item>
   </div>

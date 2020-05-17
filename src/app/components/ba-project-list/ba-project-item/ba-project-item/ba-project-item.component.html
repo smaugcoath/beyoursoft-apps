@@ -1,7 +1,6 @@
-<mat-card class="project" [class]="{ disabled: isDisabled() }" margin>
-  <div name="overlay" [class]="{ disabled: isDisabled() }"></div>
-  <mat-card-header>
-    <img mat-card-avatar src="{{ project.logoUrl }}" />
+<mat-card class="project" [class]="{ disabled: isDisabled() }">
+  <mat-card-header class="header">
+    <img mat-card-avatar src="{{ project.logoUrl }}" class="avatar-image" />
     <mat-card-title>{{ project.title }}</mat-card-title>
     <mat-card-subtitle
       ><i>By: {{ project.author }}</i></mat-card-subtitle
@@ -13,12 +12,12 @@
     alt="{{ project.title }}"
     class="main-image"
   />
-  <mat-card-content style="min-height: 100px; height: 100%;">
+  <mat-card-content class="content">
     <p>
       {{ project.description }}
     </p>
   </mat-card-content>
-  <mat-card-actions align="end">
+  <mat-card-actions align="end" class="actions">
     <a
       [disabled]="isDisabled()"
       href="{{ project.appCodeUrl }}"

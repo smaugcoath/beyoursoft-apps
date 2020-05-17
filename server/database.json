@@ -1,0 +1,65 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "BeYourSoft Apps",
+      "description": "A portfolio of all the example apps made by BeYourSoft S.L. using:\nBackend: MVC.Net Core 3.1\nFrontend: Angular 9 + Angular Material",
+      "author": "BeYourSoft S.L.",
+      "logoUrl": "./assets/images/logo-beyoursoft.png",
+      "imageUrl": "https://picsum.photos/200/200?random=1&blur=1",
+      "appCodeUrl": "http://www.google.com",
+      "appExampleUrl": "http://www.google.com",
+      "tags": [],
+      "state": "Published"
+    },
+    {
+      "id": 2,
+      "title": "ToDo List",
+      "description": "ToDo List app using differents backend and frontend technologies as example of good practices.",
+      "author": "BeYourSoft S.L.",
+      "logoUrl": "./assets/images/logo-todo.png",
+      "imageUrl": "https://picsum.photos/200/200?random=2&blur=1",
+      "appCodeUrl": "http://www.google.com",
+      "appExampleUrl": "http://www.google.com",
+      "tags": [],
+      "state": "Proposed"
+    },
+    {
+      "id": 3,
+      "title": "Ship Hunter",
+      "description": "Mini game based on well known Battleship table game.",
+      "author": "BeYourSoft S.L.",
+      "logoUrl": "./assets/images/logo-ship-hunter.png",
+      "imageUrl": "https://picsum.photos/200/200?random=3&blur=1",
+      "appCodeUrl": "http://www.google.com",
+      "appExampleUrl": "http://www.google.com",
+      "tags": [],
+      "state": "Proposed"
+    },
+    {
+      "id": 4,
+      "title": "Lucky Dicer",
+      "description": "Simple multi-platform application to throw different type of dices.",
+      "author": "BeYourSoft S.L.",
+      "logoUrl": "./assets/images/logo-lucky-dicer.png",
+      "imageUrl": "https://picsum.photos/200/200?random=4&blur=1",
+      "appCodeUrl": "http://www.google.com",
+      "appExampleUrl": "http://www.google.com",
+      "tags": [],
+      "state": "Proposed"
+    },
+    {
+      "id": 5,
+      "title": "Coupler",
+      "description": "Game of memory find the partner based on completely in Angular technology and pure css.",
+      "author": "Gabriela Coronado",
+      "logoUrl": "./assets/images/logo-coupler3.png",
+      "imageUrl": "https://picsum.photos/200/200?random=5&blur=1",
+      "appCodeUrl": "http://http://www.google.com",
+      "appExampleUrl": "http://http://www.google.com",
+      "tags": [],
+      "state": "Proposed"
+    }
+  ],
+  "tags": []
+}
