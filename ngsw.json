@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1589731874801,
+  "timestamp": 1589818834653,
   "index": "/beyoursoft-apps/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/beyoursoft-apps/favicon.ico",
         "/beyoursoft-apps/index.html",
-        "/beyoursoft-apps/main-es2015.1827ce37300e82557002.js",
-        "/beyoursoft-apps/main-es5.1827ce37300e82557002.js",
+        "/beyoursoft-apps/main-es2015.93bffdfbf16b0dbcae52.js",
+        "/beyoursoft-apps/main-es5.93bffdfbf16b0dbcae52.js",
         "/beyoursoft-apps/manifest.webmanifest",
         "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js",
         "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js",
@@ -77,9 +77,9 @@
     "/beyoursoft-apps/assets/images/logo-ship-hunter.png": "7620cd0e7bd43e1838bc70de2c02444fd2f17463",
     "/beyoursoft-apps/assets/images/logo-todo.png": "81304836001ddd4ecb7173d256540f5c6b10904f",
     "/beyoursoft-apps/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/beyoursoft-apps/index.html": "9cd3f0876f3fceed12935184f7b107ccd7aa5046",
-    "/beyoursoft-apps/main-es2015.1827ce37300e82557002.js": "cc36ae4546066a0e0f880b75bb8742f2c8cce476",
-    "/beyoursoft-apps/main-es5.1827ce37300e82557002.js": "c45147477286e4f135df01b640c03ba6bb05a9bc",
+    "/beyoursoft-apps/index.html": "884d2389e9d9b0b95e59646fc94318664fd79191",
+    "/beyoursoft-apps/main-es2015.93bffdfbf16b0dbcae52.js": "eafb4e87645a33fb63e111e19e7194c3754a4dd4",
+    "/beyoursoft-apps/main-es5.93bffdfbf16b0dbcae52.js": "55d252c38da8e800e03b6f611e9a5d0f2bd2c18b",
     "/beyoursoft-apps/manifest.webmanifest": "81b336d28386b5966bfe3243c9fd8408e91c1c9a",
     "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
