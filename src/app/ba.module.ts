@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MockApiService } from './services/api/mock-api.service';
+import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
 
 @NgModule({
   declarations: [BaComponent, BaProjectListComponent, BaProjectItemComponent],
@@ -28,6 +29,7 @@ import { MockApiService } from './services/api/mock-api.service';
     BaRoutingModule,
     BrowserAnimationsModule,
     CdkModule,
+    SharedPipesModule,
     AngularMaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,

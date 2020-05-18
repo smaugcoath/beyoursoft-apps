@@ -47,8 +47,11 @@ export class BaProjectListComponent implements OnInit, OnDestroy {
   // Lyfe Cycle ends
   filterChanged(filter: string): void {
     const filterValue = filter.toLowerCase();
-    this.filteredProjects = this.projects.filter((project) =>
-      project.title.toLowerCase().includes(filterValue)
+    this.filteredProjects = this.projects.filter(
+      (project) =>
+        project.title.toLowerCase().includes(filterValue) ||
+        project.description.toLowerCase().includes(filterValue) ||
+        project.author.toLowerCase().includes(filterValue)
     );
   }
 }

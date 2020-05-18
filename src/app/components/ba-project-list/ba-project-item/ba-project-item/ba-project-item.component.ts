@@ -9,6 +9,7 @@ import { EProjectState } from 'src/app/models/project-state.enum';
 })
 export class BaProjectItemComponent implements OnInit {
   @Input() project: IProject;
+  @Input() filter: string;
 
   constructor() {}
 
