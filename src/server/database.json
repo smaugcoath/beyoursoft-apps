@@ -9,8 +9,15 @@
       "imageUrl": "https://via.placeholder.com/300x200",
       "appCodeUrl": "http://www.google.com",
       "appExampleUrl": "http://www.google.com",
-      "tags": [],
-      "state": "Published"
+      "tags": [
+        "Angular",
+        "Angular Material",
+        "TypeScript",
+        "Html",
+        "SASS",
+        "Github Pages"
+      ],
+      "state": "InProgress"
     },
     {
       "id": 2,

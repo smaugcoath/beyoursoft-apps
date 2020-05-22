@@ -1,12 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ApiService } from 'src/app/services/api/api.service';
 import { IProject } from 'src/app/models/project.interface';
-import { Observable, Subject } from 'rxjs';
-import { takeUntil, startWith, map } from 'rxjs/operators';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'ba-project-list',
   templateUrl: './ba-project-list.component.html',
   styleUrls: ['./ba-project-list.component.scss'],
 })

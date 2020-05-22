@@ -14,28 +14,33 @@ import { BaProjectListComponent } from './components/ba-project-list/ba-project-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MockApiService } from './services/api/mock-api.service';
 import { SharedPipesModule } from './shared/pipes/shared-pipes.module';
+import { BaProjectItemDetailsComponent } from './components/ba-project-list/ba-project-item-details/ba-project-item-details.component';
 
 @NgModule({
-  declarations: [BaComponent, BaProjectListComponent, BaProjectItemComponent],
+  declarations: [
+    BaComponent,
+    BaProjectListComponent,
+    BaProjectItemComponent,
+    BaProjectItemDetailsComponent,
+  ],
   imports: [
-    BrowserModule,
-    FlexLayoutModule,
+    BaRoutingModule,
+    SharedPipesModule,
     CommonModule,
+    BrowserModule,
     FormsModule,
+    FlexLayoutModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BaRoutingModule,
     BrowserAnimationsModule,
     CdkModule,
-    SharedPipesModule,
     AngularMaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
     }),
   ],
-  providers: [{ provide: ApiService, useClass: MockApiService }],
+  providers: [{ provide: ApiService, useClass: ApiService }],
   bootstrap: [BaComponent],
 })
 export class BaModule {}

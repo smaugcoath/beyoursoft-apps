@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IProject } from 'src/app/models/project.interface';
 import { EProjectState } from 'src/app/models/project-state.enum';
+import { HighlightPipe } from 'src/app/shared/pipes/highlight/highlight.pipe';
 
 @Component({
   selector: 'ba-project-item',

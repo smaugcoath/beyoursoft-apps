@@ -9,29 +9,37 @@ import { IApiService } from './api.interface';
 import { IProject } from 'src/app/models/project.interface';
 import { Observable, throwError } from 'rxjs';
 import { map, retry, catchError } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService implements IApiService {
-  private readonly _httpClient: HttpClient;
-  private readonly Domain: URL = new URL('http://localhost:3000');
+  private readonly endpoint: string;
+
   constructor(private httpClient: HttpClient) {
-    this._httpClient = httpClient;
+    this.endpoint = environment.databaseEndpoint;
   }
   getAllProjects(): Observable<Array<IProject>> {
     const options = { params: new HttpParams({}) };
-    const URI = new URL('projects', this.Domain);
+    const uri = new URL('projects', this.endpoint);
 
-    const response = this._httpClient
-      .get<Array<IProject>>(URI.href, options)
-      .pipe(
-        retry(3),
-        catchError(this.handleError),
-        map((data: Array<IProject>) => data)
-      );
+    const response = this.httpClient
+      .get<IProject[]>(uri.href, options)
+      .pipe(retry(3), catchError(this.handleError));
 
     return response;
+  }
+
+  getProject(id: number): Observable<IProject> {
+    const options = { params: new HttpParams({}) };
+    const uri = new URL(`projects/${id}`, this.endpoint);
+
+    const result = this.httpClient
+      .get<IProject>(uri.href, options)
+      .pipe(retry(3), catchError(this.handleError));
+
+    return result;
   }
 
   handleError(error: HttpErrorResponse) {

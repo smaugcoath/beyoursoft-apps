@@ -20,6 +20,18 @@
   <mat-card-actions align="end" class="actions">
     <a
       [disabled]="isDisabled()"
+      [routerLink]="['/projects', project.id]"
+      mat-mini-fab
+      color="primary"
+      class="card-button"
+      title="Opens live example."
+      aria-label="Opens live example."
+      alt="Opens live example."
+    >
+      <mat-icon>visibility</mat-icon>
+    </a>
+    <a
+      [disabled]="isDisabled()"
       href="{{ project.appCodeUrl }}"
       mat-mini-fab
       target="_blank"

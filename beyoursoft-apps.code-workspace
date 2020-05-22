@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			".github": true,
+			".vscode": true,
+			"e2e": true,
+			"node_modules": true
+		}
+	}
 }
