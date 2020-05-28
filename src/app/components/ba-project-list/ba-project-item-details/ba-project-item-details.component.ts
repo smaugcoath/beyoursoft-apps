@@ -11,9 +11,6 @@ import { EProjectState } from 'src/app/models/project-state.enum';
 })
 export class BaProjectItemDetailsComponent implements OnInit {
   project: IProject;
-  public get stateIcon(): string {
-    return this.getStateIcon(this.project.state);
-  }
 
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 
@@ -22,23 +19,5 @@ export class BaProjectItemDetailsComponent implements OnInit {
     this.apiService
       .getProject(id)
       .subscribe((project) => (this.project = project));
-  }
-
-  private getStateIcon(state: EProjectState): string {
-    let result: string;
-    switch (+state) {
-      case EProjectState.Published:
-        result = 'done_outline';
-        break;
-      case EProjectState.InProggress:
-        result = 'hourglass_empty';
-        break;
-      case EProjectState.Proposed:
-        result = 'turned_in_not';
-        break;
-      default:
-        throw new Error('Error: The state is not mapped with an icon.');
-    }
-    return result;
   }
 }

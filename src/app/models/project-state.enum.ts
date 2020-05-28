@@ -1,5 +1,5 @@
 export enum EProjectState {
-  Published = 0,
-  InProggress,
-  Proposed,
+  Published = 'Published',
+  InProgress = 'InProgress',
+  Proposed = 'Proposed',
 }

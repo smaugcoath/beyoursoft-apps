@@ -1,4 +1,4 @@
-<mat-card class="project" [class]="{ disabled: isDisabled() }">
+<mat-card class="project" [class]="{ disabled: isDisabled }">
   <mat-card-header class="header">
     <img mat-card-avatar src="{{ project.logoUrl }}" class="avatar-image" />
     <mat-card-title
@@ -6,7 +6,32 @@
     ></mat-card-title>
     <mat-card-subtitle
       [innerHtml]="'By: ' + project.author | highlight: filter"
-    ></mat-card-subtitle>
+    >
+    </mat-card-subtitle>
+
+    <span fxFlex></span>
+
+    <mat-icon
+      *ngIf="isInProgress"
+      aria-label="The project is in progress."
+      title="Development in progress."
+      class="state in-progress"
+      >hourglass_empty</mat-icon
+    >
+    <mat-icon
+      *ngIf="isProposed"
+      aria-label="The project is proposed to be developed."
+      title="Is proposed to be developed."
+      class="state proposed"
+      >turned_in_not</mat-icon
+    >
+    <mat-icon
+      *ngIf="isPublished"
+      aria-label="The project already done."
+      title="Project already published."
+      class="state published"
+      >done_all</mat-icon
+    >
   </mat-card-header>
   <img
     mat-card-image
@@ -19,7 +44,20 @@
   </mat-card-content>
   <mat-card-actions align="end" class="actions">
     <a
-      [disabled]="isDisabled()"
+      [disabled]="isDisabled"
+      href="www.google.com"
+      mat-mini-fab
+      color="primary"
+      target="_blank"
+      class="card-button custom-size"
+      title="Opens the LinkedIn profile."
+      aria-label="Opens the LinkedIn profile."
+      alt="Opens the LinkedIn profile."
+    >
+      <mat-icon svgIcon="linked_in" class="linked-in"></mat-icon>
+    </a>
+    <a
+      [disabled]="isDisabled"
       [routerLink]="['/projects', project.id]"
       mat-mini-fab
       color="primary"
@@ -31,9 +69,10 @@
       <mat-icon>visibility</mat-icon>
     </a>
     <a
-      [disabled]="isDisabled()"
+      [disabled]="isDisabled"
       href="{{ project.appCodeUrl }}"
       mat-mini-fab
+      color="primary"
       target="_blank"
       class="card-button"
       title="Opens code example."
@@ -43,10 +82,10 @@
       <mat-icon>code</mat-icon>
     </a>
     <a
-      [disabled]="isDisabled()"
+      [disabled]="isDisabled"
       href="{{ project.appExampleUrl }}"
       mat-mini-fab
-      color="primary"
+      color="accent"
       target="_blank"
       class="card-button"
       title="Opens live example."

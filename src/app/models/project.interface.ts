@@ -1,4 +1,3 @@
-import { Url } from 'url';
 import { EProjectState } from './project-state.enum';
 
 export interface IProject {

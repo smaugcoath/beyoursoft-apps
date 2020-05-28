@@ -17,13 +17,16 @@
       class="container"
     >
       <h2><mat-icon>info</mat-icon> Project info:</h2>
-      <p>Created by: {{ project.author }}</p>
+      <p>
+        <ng-container i18n="@@createdBy">Created by</ng-container>:
+        {{ project.author }}
+      </p>
       <p>
         Project state:
         <span title="{{ project.state }}" class="cdk-visually-hidden">
           {{ project.state }}
         </span>
-        <mat-icon aria-hidden="false"> {{ stateIcon }}</mat-icon>
+        <!-- <mat-icon aria-hidden="false"> {{ stateIcon }}</mat-icon> -->
       </p>
       <mat-chip-list aria-label="Tags of the project">
         <mat-chip *ngFor="let tag of project.tags">

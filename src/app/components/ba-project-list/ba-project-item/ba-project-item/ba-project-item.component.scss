@@ -47,4 +47,36 @@
 
 .card-button {
   margin: 5px;
+  &.custom-size .linked-in {
+    height: 19px;
+  }
+}
+
+.state {
+  &.in-progress {
+    $stateColor: blue;
+    color: $stateColor;
+    svg {
+      fill: $stateColor;
+    }
+  }
+  &.proposed {
+    $stateColor: gray;
+    color: $stateColor;
+    svg {
+      fill: $stateColor;
+    }
+  }
+  &.published {
+    $stateColor: green;
+    color: $stateColor;
+    svg {
+      fill: $stateColor;
+    }
+  }
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
 }
