@@ -6,6 +6,7 @@ export class Project implements IProject {
   title: string;
   description: string;
   author: string;
+  linedinUrl: string;
   logoUrl: string;
   imageUrl: string;
   appCodeUrl: string;

@@ -6,6 +6,7 @@ export interface IProject {
   description: string;
   author: string;
   logoUrl: string;
+  linedinUrl: string;
   imageUrl: string;
   appCodeUrl: string;
   appExampleUrl: string;

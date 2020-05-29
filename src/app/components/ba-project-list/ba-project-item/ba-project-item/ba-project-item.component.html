@@ -45,7 +45,7 @@
   <mat-card-actions align="end" class="actions">
     <a
       [disabled]="isDisabled"
-      href="www.google.com"
+      [href]="project.linedinUrl"
       mat-mini-fab
       color="primary"
       target="_blank"
@@ -70,7 +70,7 @@
     </a>
     <a
       [disabled]="isDisabled"
-      href="{{ project.appCodeUrl }}"
+      [href]="project.appCodeUrl"
       mat-mini-fab
       color="primary"
       target="_blank"
@@ -83,7 +83,7 @@
     </a>
     <a
       [disabled]="isDisabled"
-      href="{{ project.appExampleUrl }}"
+      [href]="project.appExampleUrl"
       mat-mini-fab
       color="accent"
       target="_blank"
