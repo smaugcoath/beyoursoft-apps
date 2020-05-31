@@ -1,11 +1,25 @@
 <mat-card class="project" [class]="{ disabled: isDisabled }">
   <mat-card-header class="header">
-    <img mat-card-avatar src="{{ project.logoUrl }}" class="avatar-image" />
+    <img
+      mat-card-avatar
+      [attr.src]="project.logoUrl"
+      class="avatar-image"
+      [attr.alt]="
+        'PROJECT_ITEM.AVATAR.ALT' | translate: { author: project.author }
+      "
+      [attr.title]="
+        'PROJECT_ITEM.AVATAR.ALT' | translate: { author: project.author }
+      "
+    />
     <mat-card-title
       [innerHtml]="project.title | highlight: filter"
     ></mat-card-title>
     <mat-card-subtitle
-      [innerHtml]="'By: ' + project.author | highlight: filter"
+      [innerHtml]="
+        'PROJECT_ITEM.BY'
+          | translate: { author: project.author }
+          | highlight: filter
+      "
     >
     </mat-card-subtitle>
 
@@ -13,30 +27,30 @@
 
     <mat-icon
       *ngIf="isInProgress"
-      aria-label="The project is in progress."
-      title="Development in progress."
+      [attr.aria-label]="'PROJECTS.STATES.IN_PROGGRESS' | translate"
+      [attr.title]="'PROJECTS.STATES.IN_PROGGRESS' | translate"
       class="state in-progress"
       >hourglass_empty</mat-icon
     >
     <mat-icon
       *ngIf="isProposed"
-      aria-label="The project is proposed to be developed."
-      title="Is proposed to be developed."
+      [attr.aria-label]="'PROJECTS.STATES.PROPOSED' | translate"
+      [attr.title]="'PROJECTS.STATES.PROPOSED' | translate"
       class="state proposed"
       >turned_in_not</mat-icon
     >
     <mat-icon
       *ngIf="isPublished"
-      aria-label="The project already done."
-      title="Project already published."
+      [attr.aria-label]="'PROJECTS.STATES.PUBLISHED' | translate"
+      [attr.title]="'PROJECTS.STATES.PUBLISHED' | translate"
       class="state published"
       >done_all</mat-icon
     >
   </mat-card-header>
   <img
     mat-card-image
-    src="{{ project.imageUrl }}"
-    alt="{{ project.title }}"
+    [attr.src]="project.imageUrl"
+    [attr.alt]="project.title"
     class="main-image"
   />
   <mat-card-content class="content">
@@ -46,51 +60,51 @@
     <a
       [disabled]="isDisabled"
       [href]="project.linedinUrl"
+      [attr.title]="'PROJECT_ITEM.LINKEDIN' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.LINKEDIN' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.LINKEDIN' | translate"
       mat-mini-fab
       color="primary"
       target="_blank"
       class="card-button custom-size"
-      title="Opens the LinkedIn profile."
-      aria-label="Opens the LinkedIn profile."
-      alt="Opens the LinkedIn profile."
     >
       <mat-icon svgIcon="linked_in" class="linked-in"></mat-icon>
     </a>
     <a
       [disabled]="isDisabled"
       [routerLink]="['/projects', project.id]"
+      [attr.title]="'PROJECT_ITEM.VIEW' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.VIEW' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.VIEW' | translate"
       mat-mini-fab
       color="primary"
       class="card-button"
-      title="Opens live example."
-      aria-label="Opens live example."
-      alt="Opens live example."
     >
       <mat-icon>visibility</mat-icon>
     </a>
     <a
       [disabled]="isDisabled"
       [href]="project.appCodeUrl"
+      [attr.title]="'PROJECT_ITEM.CODE' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.CODE' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.CODE' | translate"
       mat-mini-fab
       color="primary"
       target="_blank"
       class="card-button"
-      title="Opens code example."
-      aria-label="Opens code example."
-      alt="Opens code example."
     >
       <mat-icon>code</mat-icon>
     </a>
     <a
       [disabled]="isDisabled"
       [href]="project.appExampleUrl"
+      [attr.title]="'PROJECT_ITEM.VIEW' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.VIEW' | translate"
+      [attr.arua-label]="'PROJECT_ITEM.VIEW' | translate"
       mat-mini-fab
       color="accent"
       target="_blank"
       class="card-button"
-      title="Opens live example."
-      aria-label="Opens live example."
-      alt="Opens live example."
     >
       <mat-icon>play_arrow</mat-icon>
     </a>

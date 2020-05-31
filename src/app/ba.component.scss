@@ -1,3 +1,5 @@
+@import "~@angular/material/theming";
+
 .ba-container {
   display: flex;
   flex-direction: column;
@@ -28,4 +30,27 @@ h1.ba-name {
   /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
      `<body>` to be our scrolling element for mobile layouts. */
   flex: 1 0 auto;
+}
+
+.nav-item mat-icon {
+  padding-right: 15px;
+  height: 26;
+}
+
+.language-picker-container {
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  @include mat-elevation-transition;
+  @include mat-elevation(2);
+  &:hover {
+    @include mat-elevation(6);
+  }
+}
+.language-picker {
+  top: 4px;
+  position: relative;
+  left: 7px;
+  font-size: 19px;
 }

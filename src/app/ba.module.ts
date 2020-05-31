@@ -20,6 +20,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MatIconRegistry } from '@angular/material/icon';
 import { CustomIconService } from './services/custom-icon/custom-icon.service';
+import { BaAboutComponent } from './components/ba-about/ba-about.component';
+import { LOCAL_STORAGE, WebStorageService } from 'ngx-webstorage-service';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { CustomIconService } from './services/custom-icon/custom-icon.service';
     BaProjectListComponent,
     BaProjectItemComponent,
     BaProjectItemDetailsComponent,
+    BaAboutComponent,
   ],
   imports: [
     BaRoutingModule,
@@ -46,12 +49,17 @@ import { CustomIconService } from './services/custom-icon/custom-icon.service';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
+        useFactory: TranslationLoaderFactory,
         deps: [HttpClient],
       },
     }),
   ],
-  providers: [ApiService, CustomIconService],
+  exports: [TranslateModule],
+  providers: [
+    ApiService,
+    CustomIconService,
+    { provide: WebStorageService, useExisting: LOCAL_STORAGE },
+  ],
   bootstrap: [BaComponent],
 })
 export class BaModule {
@@ -64,6 +72,6 @@ export class BaModule {
 }
 
 // AOT compilation support
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+export function TranslationLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
 }

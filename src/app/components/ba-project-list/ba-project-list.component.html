@@ -1,15 +1,15 @@
 <mat-toolbar>
-  <h1>Projects</h1>
+  <h1>{{ "PROJECTS.TITLE" | translate }}</h1>
   <span fxFlex></span>
   <mat-form-field class="filter">
-    <mat-label>Filter</mat-label>
+    <mat-label>{{ "PROJECTS.FILTER.PLACEHOLDER" | translate }}</mat-label>
     <input [(ngModel)]="filter" name="filter" matInput type="text" />
     <button
+      role="button"
       mat-button
       *ngIf="filter"
       matSuffix
       mat-icon-button
-      aria-label="Clear"
       (click)="filter = ''"
     >
       <mat-icon>close</mat-icon>

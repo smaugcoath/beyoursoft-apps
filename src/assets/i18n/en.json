@@ -1,3 +1,43 @@
 {
-  "SiteTitle": "Beyoursoft Apps"
+  "ABOUT": {
+    "TITLE": "About us"
+  },
+  "PROJECTS": {
+    "FILTER": {
+      "PLACEHOLDER": "Filter"
+    },
+    "PROJECT": {
+      "BY": "By: {{author}}",
+      "CODE_TITLE": "View the repository",
+      "EXAMPLE_TITLE": "Open live sample project",
+      "FILTER_PLACEHOLDER": "Filter",
+      "LINKEDIN_TITLE": "Open LinkedIn profile",
+      "VIEW_TITLE": "See more details"
+    },
+    "STATES": {
+      "IN_PROGGRESS": "Development in progress",
+      "PROPOSED": "Development proposal",
+      "PUBLISHED": "Project published"
+    },
+    "TITLE": "Projects"
+  },
+  "PROJECT_DETAILS": {
+    "BY": "Created by",
+    "INFO": "Details",
+    "LOGO": "Application logo",
+    "STATE": "State"
+  },
+  "PROJECT_ITEM": {
+    "AVATAR": {
+      "ALT": "Image of {{author}}",
+      "TITLE": "Image of {{author}}"
+    },
+    "BY": "By: {{author}}",
+    "CODE": "View the repository",
+    "EXAMPLE": "Open sample project",
+    "LINKEDIN": "Open LinkedIn profile",
+    "VIEW": "See more details"
+  },
+  "TAB_TITLE": "BeYourSoft Apps",
+  "TITLE": "BeYourSoft Apps"
 }
