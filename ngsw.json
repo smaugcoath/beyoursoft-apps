@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1589818834653,
+  "timestamp": 1590957004587,
   "index": "/beyoursoft-apps/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "/beyoursoft-apps/favicon.ico",
         "/beyoursoft-apps/index.html",
-        "/beyoursoft-apps/main-es2015.93bffdfbf16b0dbcae52.js",
-        "/beyoursoft-apps/main-es5.93bffdfbf16b0dbcae52.js",
+        "/beyoursoft-apps/main-es2015.d2e76e385949b323959b.js",
+        "/beyoursoft-apps/main-es5.d2e76e385949b323959b.js",
         "/beyoursoft-apps/manifest.webmanifest",
-        "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js",
-        "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js",
+        "/beyoursoft-apps/polyfills-es2015.6daee520f35267e9e80c.js",
+        "/beyoursoft-apps/polyfills-es5.87fcb4bbbde0ca4a1f2d.js",
         "/beyoursoft-apps/runtime-es2015.1eba213af0b233498d9d.js",
         "/beyoursoft-apps/runtime-es5.1eba213af0b233498d9d.js",
-        "/beyoursoft-apps/styles.8a4575703f2ff4d0cbea.css"
+        "/beyoursoft-apps/styles.da61bc806846abe65556.css"
       ],
       "patterns": []
     },
@@ -26,6 +26,8 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/beyoursoft-apps/assets/i18n/en.json",
+        "/beyoursoft-apps/assets/i18n/es.json",
         "/beyoursoft-apps/assets/icons/icon-128x128.png",
         "/beyoursoft-apps/assets/icons/icon-144x144.png",
         "/beyoursoft-apps/assets/icons/icon-152x152.png",
@@ -34,6 +36,8 @@
         "/beyoursoft-apps/assets/icons/icon-512x512.png",
         "/beyoursoft-apps/assets/icons/icon-72x72.png",
         "/beyoursoft-apps/assets/icons/icon-96x96.png",
+        "/beyoursoft-apps/assets/icons/linked-in copy.svg",
+        "/beyoursoft-apps/assets/icons/linked-in.svg",
         "/beyoursoft-apps/assets/images/angular-and-asp-net-core.png",
         "/beyoursoft-apps/assets/images/angular.svg",
         "/beyoursoft-apps/assets/images/big-beyoursoft.png",
@@ -54,6 +58,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/beyoursoft-apps/assets/i18n/en.json": "80e2829ded9150f6e49c0b7e5eaf8c09de97d2a5",
+    "/beyoursoft-apps/assets/i18n/es.json": "2b48960482b079266b6e5423eec473c24c7a4c06",
     "/beyoursoft-apps/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/beyoursoft-apps/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/beyoursoft-apps/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -62,6 +68,8 @@
     "/beyoursoft-apps/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/beyoursoft-apps/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/beyoursoft-apps/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/beyoursoft-apps/assets/icons/linked-in copy.svg": "3050a72056d38acfaa29498ca679aaf4e316df1b",
+    "/beyoursoft-apps/assets/icons/linked-in.svg": "09b8fdba162b84faa368a6a35535c2d6f0ba9804",
     "/beyoursoft-apps/assets/images/angular-and-asp-net-core.png": "ae5605858fee66adeb4bb4607a45c1a29770d6dd",
     "/beyoursoft-apps/assets/images/angular.svg": "816b9feb802a7dd4b1b86e1907ad78ae0903f660",
     "/beyoursoft-apps/assets/images/big-beyoursoft.png": "82ae24cda0e6bbc7a1defb8530f861b5b11b2578",
@@ -77,15 +85,15 @@
     "/beyoursoft-apps/assets/images/logo-ship-hunter.png": "7620cd0e7bd43e1838bc70de2c02444fd2f17463",
     "/beyoursoft-apps/assets/images/logo-todo.png": "81304836001ddd4ecb7173d256540f5c6b10904f",
     "/beyoursoft-apps/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/beyoursoft-apps/index.html": "884d2389e9d9b0b95e59646fc94318664fd79191",
-    "/beyoursoft-apps/main-es2015.93bffdfbf16b0dbcae52.js": "eafb4e87645a33fb63e111e19e7194c3754a4dd4",
-    "/beyoursoft-apps/main-es5.93bffdfbf16b0dbcae52.js": "55d252c38da8e800e03b6f611e9a5d0f2bd2c18b",
+    "/beyoursoft-apps/index.html": "3c3dd83afffe3182d73a2daf971b0d1e216f1024",
+    "/beyoursoft-apps/main-es2015.d2e76e385949b323959b.js": "7542557f625985b7a0f7a090b6b61d5ece30e407",
+    "/beyoursoft-apps/main-es5.d2e76e385949b323959b.js": "8e31e1e33e30de8c7b362e39059588f926d55ac5",
     "/beyoursoft-apps/manifest.webmanifest": "81b336d28386b5966bfe3243c9fd8408e91c1c9a",
-    "/beyoursoft-apps/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
-    "/beyoursoft-apps/polyfills-es5.1fd9b76218eca8053895.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
+    "/beyoursoft-apps/polyfills-es2015.6daee520f35267e9e80c.js": "90fb474e1a7d87bd57bc8a95fb3fd361b919d815",
+    "/beyoursoft-apps/polyfills-es5.87fcb4bbbde0ca4a1f2d.js": "0a0d12564d0df936f59b58a252fb49ebf1ba9f4a",
     "/beyoursoft-apps/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/beyoursoft-apps/runtime-es5.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/beyoursoft-apps/styles.8a4575703f2ff4d0cbea.css": "7f3fff48e978a98ca389a99de00e2f60d762faf1"
+    "/beyoursoft-apps/styles.da61bc806846abe65556.css": "7f3fff48e978a98ca389a99de00e2f60d762faf1"
   },
   "navigationUrls": [
     {

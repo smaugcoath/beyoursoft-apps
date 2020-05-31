@@ -9,8 +9,15 @@
       "imageUrl": "https://via.placeholder.com/300x200",
       "appCodeUrl": "http://www.google.com",
       "appExampleUrl": "http://www.google.com",
-      "tags": [],
-      "state": "Published"
+      "tags": [
+        "Angular",
+        "Angular Material",
+        "TypeScript",
+        "Html",
+        "SASS",
+        "Github Pages"
+      ],
+      "state": "InProgress"
     },
     {
       "id": 2,
@@ -53,12 +60,26 @@
       "title": "Coupler",
       "description": "Game of memory find the partner based on completely in Angular technology and pure css.",
       "author": "Gabriela Coronado",
+      "linedinUrl": "https://www.linkedin.com/in/gabriela-coronado-hern%C3%A1ndez-619648138/?locale=en_US",
       "logoUrl": "./assets/images/logo-coupler3.png",
       "imageUrl": "https://via.placeholder.com/300x200",
       "appCodeUrl": "http://http://www.google.com",
       "appExampleUrl": "http://http://www.google.com",
       "tags": [],
       "state": "Proposed"
+    },
+    {
+      "id": 6,
+      "title": "Wedding Prototype",
+      "description": "A prototype of web and mobile application for weddings.",
+      "author": "Gabriela Coronado",
+      "linedinUrl": "https://www.linkedin.com/in/gabriela-coronado-hern%C3%A1ndez-619648138/?locale=en_US",
+      "logoUrl": "./assets/images/logo-coupler3.png",
+      "imageUrl": "https://via.placeholder.com/300x200",
+      "appCodeUrl": "http://http://www.google.com",
+      "appExampleUrl": "http://http://www.google.com",
+      "tags": ["Adobe XD", "UX", "GUI", "Html", "CSS", "Wordpress", "Frontend"],
+      "state": "Published"
     }
   ],
   "tags": []
